@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+.so{
+    /* float: right; */
+    position: relative;
+    /* right: -100px; */
+    top: 10px;
+    width: 300px;
+  }
+  .btn-group{
+    margin: 20px;
+  }
+  .card{
+    margin: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .btn-group{
+        display: block!important;
+    }
+    .btn-group .btn{
+        margin: 10px!important;
+    }
+  }

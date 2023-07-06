@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Python语言程序设计",
+      "author": "嵩天 | 北京理工大学",
+      "source": "中国大学MOOC",
+      "image": "http://edu-image.nosdn.127.net/5B8826377EE623C7B6328E8F8B8D2871.png?imageView&thumbnail=510y288&quality=100",
+      "published_at": "2023-07-06",
+      "category": "计算机",
+      "url": "https://www.icourse163.org/course/BIT-268001"
+    },{
+      "title": "C语言程序设计进阶",
+      "author": "翁恺 | 浙江大学",
+      "source": "中国大学MOOC",
+      "image": "http://img-ph-mirror.nosdn.127.net/tYhzuDVilzlDOo2bEyH_Qg==/6608226511143817333.jpg",
+      "published_at": "2023-07-06",
+      "category": "计算机",
+      "url": "https://www.icourse163.org/course/ZJU-200001"
+    }
+  ]
