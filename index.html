@@ -2,84 +2,102 @@
 <html>
 
 <head>
-    <title>在线优质课程-SHSSEDU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <meta name="referrer" content="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <title>在线优质课程-SHSSEDU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="referrer" content="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 
 <body>
-        
-    <div class="container">
-        <!-- 添加导航栏 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">SHSSEDU</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">首页</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">贡献</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">关于</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">项目地址</a>
-                  </li>
-                </ul>
-                <div class="d-flex so">
-                    <div class="col-md-6">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="搜索课程" id="search-input">
-                            <button class="btn btn-outline-secondary" type="button" id="search-btn">搜索</button>
-                        </div>
-                    </div>
-                </div>
+
+  <div class="container">
+    <!-- 添加导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SHSSEDU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/SHSSEDU/Courses/issues">贡献</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/SHSSEDU/Courses">项目地址</a>
+            </li>
+          </ul>
+          <div class="d-flex so">
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="搜索课程" id="search-input">
+                <button class="btn btn-outline-secondary" type="button" id="search-btn">搜索</button>
               </div>
             </div>
-          </nav>
-
-
-
-
-        <!-- 课程列表 -->
-        <div class="btn-group" role="group" aria-label="分类">
-            <button type="button" class="btn btn-primary category-btn" data-category="计算机">计算机</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="经济管理">经济管理</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="心理学">心理学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="外语">外语</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="文学">文学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="历史">历史</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="艺术设计">艺术设计</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="工学">工学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="理学">理学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="医药卫生">医药卫生</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="农林园艺">农林园艺</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="哲学">哲学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="法学">法学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="思想政治教育">思想政治教育</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="教育教学">教育教学</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="大学先修课">大学先修课</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="职业教育">职业教育</button>
-            <button type="button" class="btn btn-primary category-btn" data-category="创新创业">创新创业</button>
           </div>
+        </div>
+      </div>
+    </nav>
 
-        <div id="course-list" class="row"></div>
-        <nav>
-        <ul class="pagination" id="pagination"></ul>
-      </nav>
+
+
+
+    <!-- 课程列表 -->
+    <div class="btn-group" role="group" aria-label="分类">
+      <button type="button" class="btn btn-primary category-btn" data-category="计算机">计算机</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="经济管理">经济管理</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="心理学">心理学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="外语">外语</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="文学">文学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="历史">历史</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="艺术设计">艺术设计</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="工学">工学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="理学">理学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="医药卫生">医药卫生</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="农林园艺">农林园艺</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="哲学">哲学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="法学">法学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="思想政治教育">思想政治教育</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="教育教学">教育教学</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="大学先修课">大学先修课</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="职业教育">职业教育</button>
+      <button type="button" class="btn btn-primary category-btn" data-category="创新创业">创新创业</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <div id="course-list" class="row"></div>
+    <nav>
+      <ul class="pagination" id="pagination"></ul>
+    </nav>
+  </div>
+  <footer>
+    <div class="col-xl-12 copyright" style="text-align: center;">
+      <div class="busuanzi" style="color: #000000;">
+        <script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+        本站总访问量 <span id="busuanzi_value_site_pv" style="color: #000000;"></span> 次
+
+        本站总访客数 <span id="busuanzi_value_site_uv" style="color: #000000;"></span> 人
+      </div>
+      <p class="copy_right text-center">
+
+        <a href="https://icp.gov.moe/?keyword=20230689" target="_blank">萌ICP备20230689号</a>
+      <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> <a href="https://shssedu.ac.cn">SHSSEDU</a> All rights
+        reserved
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
